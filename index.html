@@ -6,12 +6,13 @@
     <title>Kings Cut Barbershop | Look Sharp. Feel Sharp.</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome (CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS -->
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- TODO: This loader is nice but might be too slow on fast networks. Keep it for now -->
     <!-- Loading Screen -->
     <div id="loader" class="loader-wrapper">
         <div class="loader-content">
@@ -26,6 +27,7 @@
             <div class="logo">
                 <a href="#"><i class="fa-solid fa-scissors"></i> Kings Cut</a>
             </div>
+            <!-- Main Desktop Links -->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -34,6 +36,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="https://wa.me/254700000000" class="btn btn-gold nav-btn">Book Now</a>
+            <!-- Mobile Menu Toggle -->
             <div class="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -63,6 +66,7 @@
                 <h2>Our Services</h2>
                 <div class="gold-line mx-auto"></div>
             </div>
+            <!-- Using grid for the service cards -->
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
@@ -123,6 +127,7 @@
                 <h2>Our Work</h2>
                 <div class="gold-line mx-auto"></div>
             </div>
+            <!-- TODO: replace these with actual client photos once the owner sends them -->
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 1">
@@ -152,7 +157,7 @@
         </div>
     </section>
 
-    <!-- Lightbox -->
+    <!-- Lightbox for Gallery popups -->
     <div id="lightbox" class="lightbox">
         <span class="close-lightbox">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
@@ -237,6 +242,7 @@
                         <li>Sunday: <span>10:00 AM - 6:00 PM</span></li>
                     </ul>
                     <div class="map-container">
+                        <!-- Generic map placeholder -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113406.8837130635!2d-10.0!3d10.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDAwJzAwLjAiTiAxMMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -273,7 +279,7 @@
         </div>
     </footer>
 
-    <!-- M-Pesa Modal -->
+    <!-- M-Pesa Modal (Mocked for Demo) -->
     <div id="mpesa-modal" class="modal">
         <div class="modal-content">
             <span class="close-mpesa">&times;</span>
