@@ -357,7 +357,7 @@ h2 {
 /* Gallery Section */
 .gallery {
     padding: 100px 0;
-    background-color: var(--bg-black);
+    background: linear-gradient(135deg, var(--bg-black) 0%, #2c1a0e 100%);
 }
 
 .gallery-grid {
