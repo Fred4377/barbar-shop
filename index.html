@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings Cut Barbershop | Look Sharp. Feel Sharp.</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <i class="fa-solid fa-scissors fa-3x gold-text"></i>
+            <h2>Kings Cut</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><i class="fa-solid fa-scissors"></i> Kings Cut</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/254700000000" class="btn btn-gold nav-btn">Book Now</a>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <div class="gold-line"></div>
+            <h1>Premium Cuts. Royal Experience.</h1>
+            <p>Walk in as a customer. Leave as a king.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/254700000000" class="btn btn-gold">Book Appointment</a>
+                <a href="#services" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+        <a href="#services" class="scroll-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1813276/pexels-photo-1813276.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Classic Haircut" class="service-img">
+                    <h3>Classic Haircut</h3>
+                    <p class="price">$15</p>
+                    <p class="desc">A tailored classic cut matching your style.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Classic Haircut" data-price="$15">Book This Service</a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1813289/pexels-photo-1813289.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Beard Trim" class="service-img">
+                    <h3>Beard Trim</h3>
+                    <p class="price">$10</p>
+                    <p class="desc">Expert beard shaping and trimming.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Beard Trim" data-price="$10">Book This Service</a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/3998436/pexels-photo-3998436.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hot Towel Shave" class="service-img">
+                    <h3>Hot Towel Shave</h3>
+                    <p class="price">$20</p>
+                    <p class="desc">Relaxing traditional straight razor shave.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Hot Towel Shave" data-price="$20">Book This Service</a>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/2068911/pexels-photo-2068911.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hair + Beard Combo" class="service-img">
+                    <h3>Hair + Beard Combo</h3>
+                    <p class="price">$22</p>
+                    <p class="desc">The complete royal grooming experience.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Hair + Beard Combo" data-price="$22">Book This Service</a>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/1569421/pexels-photo-1569421.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kids Haircut" class="service-img">
+                    <h3>Kids Haircut</h3>
+                    <p class="price">$12</p>
+                    <p class="desc">Stylish cuts for the young princes.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Kids Haircut" data-price="$12">Book This Service</a>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="https://images.pexels.com/photos/2040186/pexels-photo-2040186.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hair Design" class="service-img">
+                    <h3>Hair Design</h3>
+                    <p class="price">$25</p>
+                    <p class="desc">Custom patterns and artistic designs.</p>
+                    <a href="javascript:void(0)" class="btn btn-gold-sm book-service-btn" data-service="Hair Design" data-price="$25">Book This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Our Work</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 1">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2068910/pexels-photo-2068910.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 2">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 3">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2809628/pexels-photo-2809628.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 4">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2040189/pexels-photo-2040189.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 5">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut 6">
+                    <div class="overlay"><span>View</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <div class="gold-line mx-auto"></div>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Best haircut I've ever had. The attention to detail is unmatched, and the hot towel shave is an absolute must!"</p>
+                    <div class="client-info">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Michael T." class="avatar">
+                        <span class="name">Michael T.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"A true royal experience. The shop is incredibly clean, the vibe is perfect, and my beard has never looked better."</p>
+                    <div class="client-info">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150" alt="James L." class="avatar">
+                        <span class="name">James L.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Professional, friendly, and talented barbers. I walked in as a customer and definitely left feeling like a king."</p>
+                    <div class="client-info">
+                        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150" alt="David R." class="avatar">
+                        <span class="name">David R.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact">
+        <div class="container reveal">
+            <div class="contact-split">
+                <div class="contact-left">
+                    <h2>Ready for a Fresh Cut?</h2>
+                    <div class="gold-line"></div>
+                    <p>Book your appointment today via WhatsApp for the fastest response.</p>
+                    <a href="https://wa.me/254700000000" class="btn btn-gold btn-large">
+                        <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <h3>Contact Details</h3>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Grooming Street, Style City</li>
+                        <li><i class="fa-solid fa-phone"></i> +254 700 000 000</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@kingscut.com</li>
+                    </ul>
+                    <h3>Opening Hours</h3>
+                    <ul class="hours">
+                        <li>Mon - Sat: <span>8:00 AM - 8:00 PM</span></li>
+                        <li>Sunday: <span>10:00 AM - 6:00 PM</span></li>
+                    </ul>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113406.8837130635!2d-10.0!3d10.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDAwJzAwLjAiTiAxMMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo"><i class="fa-solid fa-scissors"></i> Kings Cut</a>
+                <p>Look Sharp. Feel Sharp.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with love &copy; 2026 Kings Cut Barbershop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- M-Pesa Modal -->
+    <div id="mpesa-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-mpesa">&times;</span>
+            <div class="mpesa-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/M-PESA_LOGO-01.svg" alt="M-Pesa Logo" class="mpesa-logo">
+                <h3>Pay with M-Pesa</h3>
+            </div>
+            <div id="mpesa-details">
+                <p>Service: <span id="mpesa-service-name" class="gold-text"></span></p>
+                <p>Amount: <span id="mpesa-price" class="gold-text"></span></p>
+            </div>
+            <div class="mpesa-form" id="mpesa-form-step">
+                <label for="mpesa-phone" style="display:block; margin-bottom:10px; color:#aaa;">M-Pesa Phone Number:</label>
+                <input type="text" id="mpesa-phone" placeholder="e.g. 0712 345 678" required style="width:100%; padding:12px; border-radius:4px; border:1px solid #333; background:#111; color:#fff; margin-bottom:15px; font-family:var(--font-body);">
+                <button id="mpesa-pay-btn" class="btn btn-gold btn-full mt-3" style="width: 100%;">Send STK Push</button>
+            </div>
+            <div id="mpesa-loading" style="display:none;" class="text-center mpesa-state">
+                <i class="fa-solid fa-spinner fa-spin fa-3x gold-text"></i>
+                <p style="margin-top: 15px; color:#aaa;">Check your phone to enter M-Pesa PIN...</p>
+            </div>
+            <div id="mpesa-success" style="display:none;" class="text-center mpesa-state">
+                <i class="fa-solid fa-circle-check fa-3x" style="color: #4CAF50;"></i>
+                <h4 style="margin-top: 15px; color: #4CAF50;">Payment Successful!</h4>
+                <p style="color:#aaa;">Your appointment is confirmed. See you soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <a href="https://wa.me/254700000000" class="floating-wa">
+        <i class="fa-brands fa-whatsapp"></i> <span>Book on WhatsApp</span>
+    </a>
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
