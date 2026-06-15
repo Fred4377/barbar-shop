@@ -1,12 +1,12 @@
 /* style.css */
 :root {
-    --bg-black: #0A0A0A;
-    --bg-dark-gray: #1C1C1C;
-    --text-white: #FFFFFF;
-    --accent-gold: #D4AF37;
-    --accent-gold-hover: #b8972d;
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --bg-black: #fdfbf7;
+    --bg-dark-gray: #f5f2eb;
+    --text-white: #2c1a11;
+    --accent-gold: #c84b31;
+    --accent-gold-hover: #a23925;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Merriweather', Georgia, serif;
     --transition: all 0.3s ease;
 }
 
@@ -172,16 +172,16 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: rgba(253, 251, 247, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(44, 26, 17, 0.10);
 }
 
 .navbar.scrolled {
     padding: 15px 5%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(44, 26, 17, 0.08);
 }
 
 .logo a {
@@ -239,7 +239,7 @@ h2 {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url('https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+    background: linear-gradient(rgba(44, 26, 17, 0.8), rgba(44, 26, 17, 0.9)), url('https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,6 +247,7 @@ h2 {
     text-align: center;
     position: relative;
     padding: 0 20px;
+    color: #fdfbf7;
 }
 
 .hero-content {
@@ -292,27 +293,11 @@ h2 {
     60% { transform: translateY(-10px); }
 }
 
-/* Services Section */
-.services {
-    padding: 100px 0;
-    background-color: var(--bg-dark-gray);
-}
-
-.section-title {
-    margin-bottom: 60px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
 .service-card {
-    background-color: var(--bg-black);
+    background-color: #ffffff;
     padding: 40px 30px;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(44, 26, 17, 0.1);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -323,7 +308,7 @@ h2 {
 .service-card:hover {
     border-color: var(--accent-gold);
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(44, 26, 17, 0.08);
 }
 
 .service-img {
@@ -357,7 +342,7 @@ h2 {
 /* Gallery Section */
 .gallery {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--bg-black) 0%, #2c1a0e 100%);
+    background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark-gray) 100%);
 }
 
 .gallery-grid {
@@ -479,9 +464,9 @@ h2 {
 }
 
 .testimonial-card {
-    background-color: var(--bg-black);
+    background-color: #ffffff;
     padding: 40px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(44, 26, 17, 0.1);
     border-radius: 8px;
     position: relative;
     transition: var(--transition);
@@ -540,7 +525,8 @@ h2 {
 }
 
 .contact-left, .contact-right {
-    background-color: var(--bg-dark-gray);
+    background-color: #ffffff;
+    border: 1px solid rgba(44, 26, 17, 0.1);
     padding: 50px;
     border-radius: 8px;
 }
@@ -848,7 +834,7 @@ h2 {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: #f1f1f1;
+    color: var(--text-white);
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
