@@ -1,13 +1,14 @@
 /* style.css */
 :root {
-    --bg-black: #fdfbf7;
-    --bg-dark-gray: #f5f2eb;
-    --text-white: #2c1a11;
-    --accent-gold: #c84b31;
-    --accent-gold-hover: #a23925;
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Merriweather', Georgia, serif;
-    --transition: all 0.3s ease;
+    --bg-black: #121214; /* Matte Charcoal */
+    --bg-dark-gray: #1a1a1f; /* Darker charcoal for panels */
+    --text-white: #F3F4F6; /* Off-white text */
+    --accent-gold: #C5A880; /* Vintage Brass */
+    --accent-gold-hover: #bda078;
+    --accent-red: #8B0000; /* Deep Blood Red for badges */
+    --font-heading: 'Outfit', 'Montserrat', sans-serif; /* Heavy, bold sans-serif */
+    --font-body: 'Outfit', sans-serif;
+    --transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 * {
@@ -63,7 +64,8 @@ ul {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -172,11 +174,11 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: rgba(253, 251, 247, 0.95);
+    background-color: rgba(18, 18, 20, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
-    border-bottom: 1px solid rgba(44, 26, 17, 0.10);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
 }
 
 .navbar.scrolled {
@@ -294,21 +296,22 @@ h2 {
 }
 
 .service-card {
-    background-color: #ffffff;
+    background-color: var(--bg-dark-gray);
     padding: 40px 30px;
     text-align: center;
-    border: 1px solid rgba(44, 26, 17, 0.1);
+    border: 1px double var(--accent-gold);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
 .service-card:hover {
     border-color: var(--accent-gold);
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(44, 26, 17, 0.08);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(197, 168, 128, 0.2);
 }
 
 .service-img {
@@ -464,12 +467,13 @@ h2 {
 }
 
 .testimonial-card {
-    background-color: #ffffff;
+    background-color: var(--bg-dark-gray);
     padding: 40px;
-    border: 1px solid rgba(44, 26, 17, 0.1);
-    border-radius: 8px;
+    border: 1px double var(--accent-gold);
+    border-radius: 4px;
     position: relative;
     transition: var(--transition);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
 .testimonial-card:hover {
@@ -525,10 +529,11 @@ h2 {
 }
 
 .contact-left, .contact-right {
-    background-color: #ffffff;
-    border: 1px solid rgba(44, 26, 17, 0.1);
+    background-color: var(--bg-dark-gray);
+    border: 1px double var(--accent-gold);
     padding: 50px;
-    border-radius: 8px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
 .contact-left h2 {
@@ -729,15 +734,23 @@ h2 {
 }
 
 /* Animations */
+@keyframes razorCutReveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
 .reveal {
     opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
+    clip-path: inset(0 100% 0 0);
+    transition: opacity 0.5s ease;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    animation: razorCutReveal 0.8s cubic-bezier(0.77, 0, 0.175, 1) both;
 }
 
 /* Responsive Design */
